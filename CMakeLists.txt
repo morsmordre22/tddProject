@@ -33,7 +33,8 @@ if(UNITTEST)
 endif()
 
 
-add_executable(tddProject main.cpp)
+add_library(tddProject main.cpp
+        Complex_Number.cpp)
 
 target_link_libraries(${PROJECT_NAME} Printer)
 
@@ -54,5 +55,6 @@ if(UNIX)
                 COMMAND rm -rf ./binnaries/tasks/*
                 WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/${QBOX_PROJECT_NAME})
 endif()
+
 
 
