@@ -59,9 +59,9 @@ public:
         return new ComplexNumber(Re,-Im);
     }
     ComplexNumber CreateComplexFromPhase(type Arg) {
-        return(exp(Arg));
+        return(struct complex {type 1/cos(Arg);type 1/sin(Arg);};);
     }
     ComplexNumber CreateComplexFromPhaseDeg(type ArgDeg) {
-        return(exp(ArgDeg));
+        return(struct complex {type 1/cos(ArgDeg);type 1/sin(ArgDeg);};);
     }
 };
